@@ -1,5 +1,7 @@
+
 import express from 'express';
 import cors from 'cors';
+import seedDB from './utils/seed.js';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 import mongoSanitize from 'express-mongo-sanitize';
@@ -65,7 +67,21 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date()
   });
 });
+app.get('/seed-database', async (req, res) => {
+  try {
+    await seedDB();
 
+    res.json({
+      status: 'success',
+      message: 'Database seeded successfully'
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: 'error',
+      message: error.message
+    });
+  }
+});
 // Centralized Error Handling Middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);

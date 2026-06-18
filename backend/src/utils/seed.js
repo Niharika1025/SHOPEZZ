@@ -252,12 +252,11 @@ const seedDB = async () => {
         ipAddress: '127.0.0.1'
       });
     }
-    console.log('Seeding process completed successfully!');
-    process.exit(0);
-  } catch (error) {
-    console.error(`Seeding failed with error: ${error.message}`);
-    process.exit(1);
-  }
-};
+   console.log('Seeding process completed successfully!');
+return true;
+} catch (error) {
+  console.error(`Seeding failed with error: ${error.message}`);
+  throw error;
+}};
 
-seedDB();
+export default seedDB;
