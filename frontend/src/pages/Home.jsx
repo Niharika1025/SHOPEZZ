@@ -56,6 +56,7 @@ const Home = () => {
       if (minRating) params.minRating = minRating;
 
       const { data } = await API.get('/products', { params });
+alert(`Products loaded: ${data.data?.length}`);
       setProducts(data.data || []);
       setTotalPages(data.pagination?.totalPages || 1);
     } catch (err) {
