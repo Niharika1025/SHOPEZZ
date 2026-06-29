@@ -188,7 +188,10 @@ const ProductDetails = () => {
             <div>
               <div style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>Price</div>
               <div style={{ fontSize: '32px', fontWeight: 800, color: 'var(--color-secondary)', marginTop: '4px' }}>
-                ${product.price?.toFixed(2)}
+                {new Intl.NumberFormat("en-IN", {
+  style: "currency",
+  currency: "INR",
+}).format(product.price)}
               </div>
             </div>
             
