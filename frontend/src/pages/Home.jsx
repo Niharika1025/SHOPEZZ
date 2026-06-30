@@ -324,7 +324,7 @@ alert(`Products loaded: ${data.data?.length}`);
   {new Intl.NumberFormat("en-IN", {
     style: "currency",
     currency: "INR",
-  }).format(prod.price)}
+  }).format(prod.price * 94)}
 </span>
                       {(!user || user.role === 'buyer') && (
                         <button
