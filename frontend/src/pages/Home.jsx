@@ -321,8 +321,11 @@ alert(`Products loaded: ${data.data?.length}`);
                     {/* Footer price & Buy actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
                       <span style={{ fontSize: '20px', fontWeight: 700, color: 'var(--color-secondary)' }}>
-                        ${prod.price.toFixed(2)}
-                      </span>
+  {new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+  }).format(prod.price)}
+</span>
                       {(!user || user.role === 'buyer') && (
                         <button
                           onClick={(e) => handleAddToCart(e, prod._id)}
