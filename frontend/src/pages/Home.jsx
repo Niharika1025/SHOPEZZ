@@ -322,9 +322,9 @@ alert(`Products loaded: ${data.data?.length}`);
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
                       <span style={{ fontSize: '20px', fontWeight: 700, color: 'var(--color-secondary)' }}>
   {new Intl.NumberFormat("en-IN", {
-    style: "currency",
-    currency: "INR",
-  }).format(prod.price * 94)}
+  style: "currency",
+  currency: "INR",
+}).format(prod.price * 100)}
 </span>
                       {(!user || user.role === 'buyer') && (
                         <button
