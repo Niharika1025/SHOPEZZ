@@ -324,10 +324,30 @@ alert(`Products loaded: ${data.data?.length}`);
                       }}>
                         {prod.description}
                       </p>
-                      {prod.ratings?.count > 0 && (
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '8px', fontSize: '13px', color: 'var(--color-warning)' }}>
-                          ★ {prod.ratings.average.toFixed(1)} <span style={{ color: 'var(--text-muted)' }}>({prod.ratings.count})</span>
-                        </div>
+                      <div
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
+    marginTop: '8px',
+    fontSize: '13px'
+  }}
+>
+  {prod.ratings?.count > 0 ? (
+    <>
+      <span style={{ color: '#f59e0b' }}>
+        ★ {prod.ratings.average.toFixed(1)}
+      </span>
+      <span style={{ color: 'var(--text-muted)' }}>
+        ({prod.ratings.count} reviews)
+      </span>
+    </>
+  ) : (
+    <span style={{ color: 'var(--text-muted)' }}>
+      ☆ No reviews yet
+    </span>
+  )}
+</div>
                       )}
                     </div>
 
