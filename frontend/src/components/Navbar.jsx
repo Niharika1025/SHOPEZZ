@@ -18,18 +18,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav style={{
+  return (
+  <nav
+    style={{
       position: 'sticky',
       top: 0,
       zIndex: 1000,
-      background: 'rgba(10, 11, 30, 0.7)',
-      backdropFilter: 'var(--glass-blur)',
-      borderBottom: '1px solid var(--glass-border)',
-      padding: '16px 24px',
+      background: '#ffffff',
+      borderBottom: '1px solid #e5e7eb',
+      padding: '18px 40px',
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'space-between'
-    }}>
+      justifyContent: 'space-between',
+      boxShadow: '0 2px 10px rgba(0,0,0,.05)'
+    }}
+  >
       <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
         <Link to="/" style={{
           fontSize: '24px',
