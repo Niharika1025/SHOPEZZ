@@ -122,10 +122,16 @@ alert(`Products loaded: ${data.data?.length}`);
   }}
 >
   ShopEZ
-</h1>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '16px', maxWidth: '600px', margin: '0 auto' }}>
-          Explore curated items from trusted sellers with responsive UI, real-time filters, and instant checkout.
-        </p>
+</h1><p
+  style={{
+    color: 'var(--text-secondary)',
+    fontSize: '16px',
+    maxWidth: '600px',
+    margin: '0 auto'
+  }}
+>
+  Your one-stop destination for smart, secure, and seamless online shopping.
+</p>
       </header>
 
       {/* Main Grid: Filters + Products */}
