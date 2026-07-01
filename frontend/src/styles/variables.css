@@ -1,42 +1,45 @@
 :root {
-  /* Background Colors */
+
+  /* Background */
   --bg-dark-primary: #ffffff;
   --bg-dark-secondary: #f8fbff;
 
-  /* Text Colors */
-  --text-primary: #1e293b;
+  /* Text */
+  --text-primary: #1f2937;
   --text-secondary: #64748b;
   --text-muted: #94a3b8;
 
-  /* Primary Theme */
-  --color-primary: #3b82f6;          /* Sky Blue */
+  /* Theme */
+  --color-primary: #3b82f6;
   --color-primary-hover: #2563eb;
 
-  --color-secondary: #60a5fa;        /* Light Blue */
-  --color-secondary-hover: #3b82f6;
+  --color-secondary: #93c5fd;
+  --color-secondary-hover: #60a5fa;
 
-  /* Status Colors */
   --color-success: #22c55e;
   --color-error: #ef4444;
   --color-warning: #f59e0b;
   --color-info: #0ea5e9;
 
-  /* Glassmorphism */
-  --glass-bg: rgba(255, 255, 255, 0.95);
-  --glass-bg-hover: rgba(239, 246, 255, 1);
-  --glass-border: rgba(59, 130, 246, 0.15);
-  --glass-border-focus: rgba(59, 130, 246, 0.4);
+  /* Glass */
+  --glass-bg: rgba(255,255,255,0.9);
+  --glass-bg-hover: rgba(239,246,255,1);
 
-  --glass-shadow: 0 8px 30px rgba(59, 130, 246, 0.12);
-  --glass-blur: blur(16px);
+  --glass-border: rgba(59,130,246,.15);
+  --glass-border-focus: rgba(59,130,246,.35);
+
+  --glass-shadow: 0 8px 24px rgba(59,130,246,.12);
+
+  --glass-blur: blur(14px);
 
   /* Layout */
+
   --border-radius-sm: 8px;
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
 
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
+  --transition-fast: .2s ease;
+  --transition-normal: .3s ease;
 
   --max-width: 1280px;
 }
