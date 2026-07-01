@@ -113,9 +113,16 @@ alert(`Products loaded: ${data.data?.length}`);
         marginBottom: '32px',
         background: 'linear-gradient(135deg, rgba(138, 43, 226, 0.05) 0%, rgba(255, 0, 127, 0.03) 100%)'
       }}>
-        <h1 className="text-gradient-accent" style={{ fontSize: '40px', marginBottom: '12px', fontWeight: 800 }}>
-          ShopEZ Marketplace
-        </h1>
+       <h1
+  className="text-gradient-accent"
+  style={{
+    fontSize: '40px',
+    marginBottom: '12px',
+    fontWeight: 800
+  }}
+>
+  ShopEZ
+</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '16px', maxWidth: '600px', margin: '0 auto' }}>
           Explore curated items from trusted sellers with responsive UI, real-time filters, and instant checkout.
         </p>
